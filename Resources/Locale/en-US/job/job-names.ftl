@@ -27,6 +27,7 @@ job-name-ertleader = ERT Leader
 job-name-ertmedic = ERT Medic
 job-name-ertsecurity = ERT Security
 job-name-hop = Head of Personnel
+job-name-csrep = Cybersun Rep
 job-name-hos = Head of Security
 job-name-intern = Medical Intern
 job-name-janitor = Janitor

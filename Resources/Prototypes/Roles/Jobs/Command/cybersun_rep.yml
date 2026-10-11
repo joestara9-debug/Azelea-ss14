@@ -1,0 +1,86 @@
+- type: job
+  id: CybersunRep
+  name: job-name-csrep
+  description: job-description-hop
+  playTimeTracker: JobCybersunRep
+  requirements:
+    # Starlight - we've changed basically this whole block to be service instead of captain-lite
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 20h # Starlight
+    - !type:RoleTimeRequirement
+      role: JobBotanist
+      time: 3h
+    - !type:RoleTimeRequirement
+      role: JobChef
+      time: 3h
+    - !type:RoleTimeRequirement
+      role: JobJanitor
+      time: 3h
+    - !type:TraitsRequirement # Starlight
+      traits:
+        - Iterator
+      inverted: true
+  weight: 20
+  startingGear: HoPGear
+  icon: "JobIconHeadOfPersonnel"
+  supervisors: job-supervisors-captain
+  access:
+  - Cadet # Starlight
+  - Command
+  - HeadOfPersonnel
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+  - Cryogenics
+  # I mean they'll give themselves the rest of the access levels *anyways*.
+  # As of 15/03/23 they can't do that so here's MOST of the rest of the access levels.
+  # Head level access that isn't their own was deliberately left out, get AA from the captain instead.
+  - Chemistry
+  - Engineering
+  - Research
+  - Detective
+  - Salvage
+  - Security
+  - Brig
+  - Lawyer
+  - Cargo
+  - Atmospherics
+  - Medical
+  - Journalism # Goobstation
+  - Robotics # Starlight start
+  - Brigmedic
+  - Surgery
+  - Paramedic
+  - Mining
+  - SalvageLead
+  - Mail
+  - Debrief
+  - Shuttle
+  - Clown
+  - Mime # Starlight end
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: HoPGear
+  equipment:
+    #shoes: ClothingShoesColorBrown # 🌟Starlight🌟
+    id: HoPPDA
+    gloves: ClothingHandsGlovesHop
+    ears: ClothingHeadsetHoP
+    belt: BoxFolderClipboardThreePapers
+    #eyes: ClothingEyesHudCommand #Starlight
+  storage:
+    back:
+    - Flash

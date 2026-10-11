@@ -68,6 +68,7 @@
   color: "#fcdf03"
   roles:
   - Captain
+  - CybersunRep
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel

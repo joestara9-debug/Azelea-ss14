@@ -17,6 +17,9 @@
   id: JobNanoTrasenRepresentative
 
 - type: playTimeTracker
+  id: JobCybersunRep
+
+- type: playTimeTracker
   id: JobIAA
 
 - type: playTimeTracker
